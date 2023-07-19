@@ -1,56 +1,95 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet"> <!-- CSS연결 명령 -->
+        <script src="script.js"></script>
+        <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
     </head>
     <body>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROe0XxQPyNMWP9L80aM68BUSmXBEQHYd_fgjLXA4_g&s" width="100px">
-        <input value="검색"/>
-        <div id="profile">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT5IoPbbevRN-1247n-UY9HMNmAL85JzBzwA&usqp=CAU" width="50px">
+        <div id="top">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROe0XxQPyNMWP9L80aM68BUSmXBEQHYd_fgjLXA4_g&s" width="100px">
+            <input value="🔎검색"/>
             <div>
-                <h2>smcgok</h2>
+                <i class="fas fa-home"></i>
+                <i class="fa-light fa-paper-plane"></i>
+                <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
+            </div><!--공간할당을 위한 div -->
+        </div>
+        <div id="profile">
+            <div id="profile_pics">
+                <img class="circle_pic1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT5IoPbbevRN-1247n-UY9HMNmAL85JzBzwA&usqp=CAU" width="50px">
+            </div>
+            <div id="profile_info">
+                <div id="id">
+                    <span>smcgok</span> <i class="fas fa-cog"></i>
+                </div>
                 <button>프로필편집</button>
             </div>
         </div>
         <div>
         <p>
-            <strong>신민철(Shin mincheol)<br/>
-                </strong>
-                교사
-         </p>
+            <strong id="userInfo">신민철 (Shin mincheol)<br/></strong>
+                <span id="summary">교사</span>
+        </p>
         
-        <p>
+        <p id="profileDetail">
             <a href="https://github.com/ckftm/instagram/tree/master">https://github.com/ckftm/instagram/tree/master</a>
         </p>
         </div>
+     <div id="highlight_area">
         <div class="highlight">
-            <img src="image/1.jpeg" height="35px"/>
+            <div class="highlight_pic">
+                <img class="circle_pic" src="image/1.jpeg"/>
+            </div>
             <div>😊</div>
-            <img src="image/2.jpeg" height="35px"/>
+        </div>
+        <div class="highlight">
+            <div class="highlight_pic">
+                <img class="circle_pic" src="image/2.jpeg"/>
+            </div>
             <div>❤️</div>
         </div>
-        <div>
-        <p>
-        게시물<br/>
-        팔로워<br/>
-        팔로우<br/>
-        133<br/>
-        408<br/>
-        189<br/>
-        </p>
+        <div></div> <!--공간할당을 위한 div -->
+    </div>
+    </div>
+        <div id="start_bar">
+            <div class="start">
+            게시물<br/>
+            133
+            </div>
+            <div class="start">
+            팔로워<br/>
+            408
+            </div>
+            <div class="start">
+            팔로우<br/>
+            189
+            </div>
         </div>
-    <div>아이콘이 들어갈 자리</div>
+    <div id="sub_icons">
+        <div class="selected"><i class="fas fa-border-all"></i></div>
+        <div><i class="far fa-film"></i></div>    
+        <div><i class="far fa-play-circle"></i></div>   
+        <div><i class="far fa-bookmark"></i></div>   
+        <div><i class="fas fa-user-tag"></i></div>      
+    </div>
     <div>
-        <img src="image/thumbnails/1.jpg" width="32%"/>
-        <img src="image/thumbnails/2.jpg" width="32%"/>
-        <img src="image/thumbnails/3.jpg" width="32%"/>
-        <img src="image/thumbnails/4.jpg" width="32%"/>
-        <img src="image/thumbnails/5.jpg" width="32%"/>
-        <img src="image/thumbnails/6.jpg" width="32%"/>
-        <img src="image/thumbnails/7.jpg" width="32%"/>
-        <img src="image/thumbnails/8.jpg" width="32%"/>
-        <img src="image/thumbnails/9.jpg" width="32%"/>
+        <div class="thumbnail_grid">
+            <img src="image/thumbnails/1.jpg" class="thumbnail_grid"/>
+            <img src="image/thumbnails/2.jpg" class="thumbnail_grid"/>
+            <img src="image/thumbnails/3.jpg" class="thumbnail_grid"/>
+        </div>
+        <div class="thumbnail_grid"> 
+            <img src="image/thumbnails/4.jpg" class="thumbnail_grid"/>
+            <img src="image/thumbnails/5.jpg" class="thumbnail_grid"/>
+            <img src="image/thumbnails/6.jpg" class="thumbnail_grid"/>
+        </div>
+        <div class="thumbnail_grid">
+            <img src="image/thumbnails/7.jpg" class="thumbnail_grid">
+            <img src="image/thumbnails/8.jpg" class="thumbnail_grid"/>
+            <img src="image/thumbnails/9.jpg" class="thumbnail_grid"/>
+        </div>
     </div>
     </body>
 </html>
